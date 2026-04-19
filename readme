@@ -1,0 +1,20 @@
+# Aplikācijas abonements
+
+## Apraksts
+Šī ir interaktīva mājaslapa, kur lietotājs var izvēlēties aplikācijas abonēšanas periodu un redzēt cenu.
+
+## Funkcionalitāte
+- Lietotājs izvēlas abonementu (mēnesis/gads)
+- JavaScript aprēķina cenu
+- Tiek salīdzināts gada un mēneša plāns
+- Parāda ietaupījumu
+
+## Lietošana
+1. Izvēlies plānu
+2. Nospied "Aprēķināt"
+3. Skaties rezultātu
+
+## Tehnoloģijas
+- HTML
+- CSS
+- JavaScript
