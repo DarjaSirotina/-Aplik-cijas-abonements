@@ -1,0 +1,36 @@
+const button = document.getElementById("calculateBtn");
+
+button.addEventListener("click", function () {
+
+    const plan = document.getElementById("plans").value;
+    const result = document.getElementById("result");
+
+    let price = 0;
+    let message = "";
+
+    if (plan === "month") {
+        price = 10;
+        message = "Tu izvēlējies mēneša plānu.";
+    } 
+    else if (plan === "year") {
+        price = 100;
+        message = "Tu izvēlējies gada plānu.";
+    } 
+    else {
+        result.textContent = "Kļūda izvēlē!";
+        result.style.color = "red";
+        return;
+    }
+
+    // Papildus loģika (salīdzinājums)
+    const monthlyYearCost = 10 * 12;
+
+    let savings = monthlyYearCost - 100;
+
+    if (plan === "year") {
+        message += ` Tu ietaupi ${savings}€ gadā!`;
+    }
+
+    result.textContent = message + " Cena: " + price + "€";
+    result.style.color = "green";
+});
